@@ -1,0 +1,71 @@
+<div *ngIf="showNews">
+  <div class="container">
+    <h1 class="mb-4 fs-4 fw-bold">Noticias del Momento</h1>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4  d-flex flex-fill">
+        <div class="card">
+          <img src="../../../assets/img/news/new1.png" class="card-img-top" alt="Noticia 1">
+          <div class="card-body">
+            <h5 class="card-title fs-6 fw-bold">Bunny Benz: la perrita rescatada que volvió a caminar gracias a una
+              “lujosa” silla de ruedas</h5>
+            <p class="card-text">Bunny perdió sus patas traseras tras ser atropellada por un vehículo, luego la
+              abandonaron. La lujosa marca de automóviles Mercedes Benz, tras conocer su historia, decidió darle una
+              silla de ruedas a su medida para que pudiera volver a correr libremente.</p>
+            <a class="btn btn-primary" (click)="navigateToNew1()">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4  d-flex flex-fill">
+        <div class="card">
+          <img src="../../../assets/img/news/new2.png" class="card-img-top" alt="Noticia 2">
+          <div class="card-body">
+            <h5 class="card-title fs-6 fw-bold">Dos carros bombas y hostigamientos hubo este fin se semana en el Valle y
+              Cauca</h5>
+            <p class="card-text">En Dagua atacaron una estación de Policía, mientras que en Cali se presentaron dos
+              ataques con granadas.</p>
+            <a class="btn btn-primary" (click)="navigateToNew2()">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4  d-flex flex-fill">
+        <div class="card">
+          <img src="../../../assets/img/news/new3.jpg" class="card-img-top" alt="Noticia 2">
+          <div class="card-body">
+            <h5 class="card-title fs-6 fw-bold">Rubén Blades le envió mensaje de apoyo al presidente Petro en concierto
+              en Bogotá tras el escándalo con su hijo, ¿qué le dijo?</h5>
+            <p class="card-text">El hecho ocurrió en medio de su concierto en la capital del país, después de haberse
+              presentado en Medellín.
+            </p>
+            <a class="btn btn-primary" (click)="navigateToNew3()">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 d-flex flex-fill">
+        <div class="card">
+          <img src="../../../assets/img/news/new4.png" class="card-img-top" alt="Noticia 2">
+          <div class="card-body">
+            <h5 class="card-title fs-6 fw-bold">MinEnergía socializó lineamientos para que las empresas reduzcan
+              emisiones de CO2</h5>
+            <p class="card-text">Además, la Usaid comentó sobre planes en los que han venido trabajando para que
+              Colombia enfrente el cambio climático</p>
+            <a class="btn btn-primary" (click)="navigateToNew4()">Leer más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="showNew1">
+  <app-new1></app-new1>
+</div>
+<div *ngIf="showNew2">
+  <app-new2></app-new2>
+</div>
+<div *ngIf="showNew3">
+  <app-new3></app-new3>
+</div>
+<div *ngIf="showNew4">
+  <app-new4></app-new4>
+</div>
+

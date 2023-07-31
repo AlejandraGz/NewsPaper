@@ -1,0 +1,9 @@
+.container {
+  margin: 150px auto;
+  width: 40%;
+}
+.img-top {
+  padding: 10px;
+  height: 400px;
+  object-fit: cover;
+}
